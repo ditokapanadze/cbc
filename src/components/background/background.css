@@ -1,0 +1,64 @@
+.backdground__container {
+  padding: 30px 250px;
+  background-image: url("../../assets/img/background.jpg");
+  background-position: right;
+  background-size: contain;
+  /* height: 70vh; */
+
+  background-repeat: no-repeat;
+}
+.background__text p {
+  font-size: 100px;
+  margin-bottom: 30px;
+}
+.background__text {
+  margin-top: 10px;
+  font-family: "Gilroy";
+  margin-left: 1vw;
+}
+
+@media (max-width: 1100px) {
+  .background__text p {
+    font-size: 70px;
+  }
+}
+@media (max-width: 1025px) {
+  .backdground__container {
+    padding: 0 160px;
+  }
+  .background__text {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 900px) {
+  .background__text p {
+    font-size: 60px;
+    margin-bottom: 30px;
+  }
+  .background__text {
+    margin: 0;
+  }
+  .backdground__container {
+  }
+}
+@media (max-width: 850px) {
+  .background__text p {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 650px) {
+  .backdground__container {
+    padding: 0 80px;
+  }
+  .background__text {
+  }
+  .background__text p {
+    font-size: 6vw;
+  }
+}
+@media (max-width: 450px) {
+  .backdground__container {
+    padding: 0 40px;
+  }
+}

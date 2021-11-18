@@ -1,0 +1,31 @@
+.welcome__container {
+  margin: 0 auto;
+  max-width: 1500px;
+  width: 80%;
+}
+.welcome__img {
+  width: 430px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 1365px) {
+  .welcome__img {
+    width: 380px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .welcome__img {
+    width: 310px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .welcome__img {
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .welcome__img {
+    width: 80vw;
+  }
+}
