@@ -1,0 +1,29 @@
+.tools__container {
+  align-items: center;
+}
+.discord__btn {
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  outline: none;
+  background-color: #738adb;
+  border-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  margin-right: 30px;
+}
+.discord__logo {
+  font-size: 40px;
+  color: black;
+}
+.discord__btn a {
+  text-decoration: none;
+}
+.discord__btn p {
+  color: rgb(231, 228, 228);
+  font-size: 18px;
+
+  /* color: white; */
+}

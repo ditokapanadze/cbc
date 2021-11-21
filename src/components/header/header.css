@@ -7,6 +7,9 @@ header {
   position: relative;
   display: flex;
   align-items: center;
+  animation: headerAnimation 2s forwards;
+}
+.logo {
 }
 .header__li:hover {
   color: rgb(208, 200, 214);
@@ -36,7 +39,7 @@ header li {
   height: 20px;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
-  /* border: 3px solid #fff; */
+  cursor: pointer;
 }
 .menu-btn__burger {
   width: 40px;
@@ -78,6 +81,14 @@ header li {
 .menu-btn {
   display: none;
 }
+@keyframes headerAnimation {
+  from {
+    transform: translateY(-40px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 @media screen and (max-width: 850px) {
   .wallet__btn {
     padding: 10px 15px;
@@ -86,12 +97,13 @@ header li {
   }
 }
 @media screen and (max-width: 750px) {
+  header {
+    animation: none;
+  }
   .header__ul {
     display: none;
   }
   .menu-btn {
-    margin-top: 10px;
-
     display: inline-block;
   }
   header li {

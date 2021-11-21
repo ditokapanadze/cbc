@@ -1,22 +1,48 @@
 .backdground__container {
-  padding: 30px 250px;
+  padding: 30px 0 30px 250px;
+  /* background-color: aqua; */
   background-image: url("../../assets/img/background.jpg");
-  background-position: right;
+  background-position: center;
   background-size: contain;
   /* height: 70vh; */
-
+  animation: animation2 2s forwards;
   background-repeat: no-repeat;
+}
+.test {
 }
 .background__text p {
   font-size: 100px;
   margin-bottom: 30px;
+  animation: animation1 2s forwards;
+}
+
+@keyframes animation1 {
+  from {
+    transform: translate(-700px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+
+@keyframes animation2 {
+  from {
+    background-position: center;
+  }
+  to {
+    background-position: right;
+  }
 }
 .background__text {
   margin-top: 10px;
   font-family: "Gilroy";
   margin-left: 1vw;
+  width: auto;
 }
 
+.background__text {
+  overflow: hidden;
+}
 @media (max-width: 1100px) {
   .background__text p {
     font-size: 70px;
@@ -24,7 +50,7 @@
 }
 @media (max-width: 1025px) {
   .backdground__container {
-    padding: 0 160px;
+    padding: 0 100px;
   }
   .background__text {
     margin-top: 20px;
@@ -60,5 +86,10 @@
 @media (max-width: 450px) {
   .backdground__container {
     padding: 0 40px;
+  }
+}
+@media (max-width: 300px) {
+  .backdground__container {
+    padding: 0 10px;
   }
 }
