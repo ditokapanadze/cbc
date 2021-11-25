@@ -17,9 +17,9 @@ function Tools() {
       </div>
       <div>
         <a href="https://discord.com/" target="_blank">
-          <div className="discord__btn">
+          <button className="discord__btn">
             <p>Join Discord</p> <FaDiscord className="discord__logo" />{" "}
-          </div>
+          </button>
         </a>
       </div>
     </div>

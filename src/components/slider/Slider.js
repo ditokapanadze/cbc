@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./slider.css";
 import "swiper/swiper-bundle.min.css";
 
@@ -12,12 +12,12 @@ SwiperCore.use([Autoplay]);
 
 function Slider() {
   const { height, width } = useWindowDimensions();
-  const [my_swiper, set_my_swiper] = useState({});
-
+  console.log(width);
   return (
     <Swiper
+      slideToClickedSlide={true}
       autoplay={{ delay: 7000 }}
-      slidesPerView={width / 400}
+      slidesPerView={width <= 768 ? 3 : width <= 1024 ? 3 : width / 400}
       spaceBetween={10}
       pagination={{ clickable: true }}
       tag="section"
@@ -37,16 +37,16 @@ function Slider() {
       <SwiperSlide key="3">
         <img className="slider__img" src={Cat} />
       </SwiperSlide>
-      <SwiperSlide key="3">
+      <SwiperSlide key="4">
         <img className="slider__img" src={Cat} />
       </SwiperSlide>
-      <SwiperSlide key="3">
+      <SwiperSlide key="5">
         <img className="slider__img" src={Cat} />
       </SwiperSlide>
-      <SwiperSlide key="3">
+      <SwiperSlide key="6">
         <img className="slider__img" src={Cat} />
       </SwiperSlide>
-      <SwiperSlide key="3">
+      <SwiperSlide key="7">
         <img className="slider__img" src={Cat} />
       </SwiperSlide>
     </Swiper>

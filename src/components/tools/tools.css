@@ -14,6 +14,9 @@
 
   margin-right: 30px;
 }
+.discord__btn:hover {
+  background-color: #6380e9;
+}
 .discord__logo {
   font-size: 40px;
   color: black;

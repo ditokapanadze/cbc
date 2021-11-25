@@ -11,6 +11,8 @@ import Roadmap from "./components/roadmap/Roadmap";
 import Footer from "./components/footer/Footer";
 import Tools from "./components/tools/Tools";
 import Slider from "./components/slider/Slider";
+import Faq from "./components/faq/Faq";
+import Nft from "./components/nft/Nft";
 // import Slider from "./components/slider/Slider";
 
 function App() {
@@ -18,7 +20,6 @@ function App() {
   return (
     <div className="app">
       <Header />
-
       <Background />
       {/* <Gallery /> */}
       <Welocome />
@@ -27,6 +28,8 @@ function App() {
       <Tools />
       <Welocome />
       <Aboutus />
+      <Nft />
+      <Faq />
       <Slider />
       <Footer />
     </div>
