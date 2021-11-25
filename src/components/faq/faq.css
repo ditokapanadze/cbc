@@ -24,3 +24,9 @@
 .faq__content {
   padding-left: 20px;
 }
+
+@media screen and (max-width: 769px) {
+  .faq__container {
+    display: inline-block;
+  }
+}

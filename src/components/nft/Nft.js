@@ -18,7 +18,7 @@ function Nft() {
           </p>
         </div>
         <div>
-          <span>Why shouwld you own Nfts?</span>
+          <span>Why should you own Nfts?</span>
           <p>
             When you buy an NFT, you’re paying for a token that represents a
             unique item. In other words, you’re paying for an extremely small
