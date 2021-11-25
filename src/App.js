@@ -10,6 +10,8 @@ import Welocome from "./components/welcome/Welocome";
 import Roadmap from "./components/roadmap/Roadmap";
 import Footer from "./components/footer/Footer";
 import Tools from "./components/tools/Tools";
+import Slider from "./components/slider/Slider";
+// import Slider from "./components/slider/Slider";
 
 function App() {
   window.addEventListener("scroll", { behavior: "smooth" });
@@ -25,7 +27,7 @@ function App() {
       <Tools />
       <Welocome />
       <Aboutus />
-
+      <Slider />
       <Footer />
     </div>
   );
